@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+src/sallmond
+src/test/test_sallmon
