@@ -1,0 +1,33 @@
+# /etc/conf.d/sallmond: config file for /etc/init.d/sallmond
+
+# Config file location
+#SALLMOND_CONFIGFILE="/etc/sallmon/sallmon.conf"
+
+# What directory to write pidfile to?  (created and owned by $SALLMOND_USER)
+#SALLMOND_PIDDIR="/var/run/sallmond"
+
+# What filename to give the pidfile
+#SALLMOND_PIDFILE="${SALLMOND_PIDDIR}/sallmond.pid"
+
+# Where to write sallmond data (be mindful that the blockchain is large)
+#SALLMOND_DATADIR="/var/lib/sallmond"
+
+# User and group to own sallmond process
+#SALLMOND_USER="sallmon"
+#SALLMOND_GROUP="sallmon"
+
+# Path to sallmond executable
+#SALLMOND_BIN="/usr/bin/sallmond"
+
+# Nice value to run sallmond under
+#SALLMOND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#SALLMOND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for sallmond to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+SALLMOND_SIGTERM_TIMEOUT=60

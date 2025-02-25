@@ -1,0 +1,6 @@
+usr/local/bin/sallmon-qt usr/bin
+share/pixmaps/sallmon32.xpm usr/share/pixmaps
+share/pixmaps/sallmon16.xpm usr/share/pixmaps
+share/pixmaps/sallmon128.png usr/share/pixmaps
+debian/sallmon-qt.desktop usr/share/applications
+debian/sallmon-qt.protocol usr/share/kde4/services/

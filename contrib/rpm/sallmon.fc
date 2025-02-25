@@ -1,0 +1,8 @@
+/usr/bin/sallmon-cli		--	gen_context(system_u:object_r:sallmon_exec_t,s0)
+/usr/sbin/sallmond		--	gen_context(system_u:object_r:sallmon_exec_t,s0)
+/usr/lib(64)?/sallmon/sallmond		--	gen_context(system_u:object_r:sallmon_exec_t,s0)
+
+/etc/sallmon(/.*)?		gen_context(system_u:object_r:sallmon_conf_t,s0)
+/var/lib/sallmon(/.*)?		gen_context(system_u:object_r:sallmon_var_lib_t,s0)
+
+(/var)?/run/sallmond(/.*)?   gen_context(system_u:object_r:sallmon_var_run_t,s0)

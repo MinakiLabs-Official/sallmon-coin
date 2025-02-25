@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Sallmon Core
+Comment=Connect to the Sallmon P2P Network
+Comment[de]=Verbinde mit dem Sallmon peer-to-peer Netzwerk
+Comment[fr]=Sallmon, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Sallmon, eşten eşe kriptografik sanal para birimi
+Exec=sallmon-qt %u
+Terminal=false
+Type=Application
+Icon=sallmon128
+MimeType=x-scheme-handler/sallmon;
+Categories=Office;Finance;

@@ -1,0 +1,22 @@
+[Unit]
+Description=Sallmon's distributed currency daemon
+After=network.target
+
+[Service]
+User=sallmon
+Group=sallmon
+
+Type=forking
+PIDFile=/var/lib/sallmond/sallmond.pid
+ExecStart=/usr/bin/sallmond -daemon -pid=/var/lib/sallmond/sallmond.pid \
+-conf=/etc/sallmon/sallmon.conf -datadir=/var/lib/sallmond -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
